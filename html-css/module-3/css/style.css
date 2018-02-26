@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    list-style: none;
+}
+header {
+    width: 960px;
+    height: 140px;
+    margin: auto;
+}
+
+nav {
+    padding-top: 77px;
+}
+
+.menu {
+    width: 668px;
+    height: 20px;
+    margin: auto;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 0 45px;
+}
+
+.menu_link{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu_link:hover{
+    text-shadow: 0px 4px 10px rgba(150, 150, 150, 1);
+}
+
+main{
+    width: 960px;
+    height: 100%;
+    margin: auto;
+}
+.article__box{
+    width: 420px;
+    height: 485px;
+    padding: 55px 28px 55px 28px;
+    display: inline-block;
+}
+
+.pic__item{
+    display: inline-block;
+    width: 420px;
+    height: 280px;
+    margin-bottom: 25px;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 14px;
+}
+.pic__ref{
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    color: #c8c3b8;
+}
+.load{
+    display: block;
+    width: 165px;
+    height: 60px;
+    border: 1px solid #626262;
+    font-size: 20px;
+    margin: 55px auto;
+}
