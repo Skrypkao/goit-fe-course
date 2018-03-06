@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900');
+* {
+    margin: 0;
+    padding: 0:
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1110px;
+    height: 100%;
+    margin: auto;
+}
+
+header{
+    width: 1110px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+header::after{
+        content: "";
+        display: table;
+        clear: both;
+}
+
+.logo {
+    margin-top: 40px;
+    float: left;
+    width: 80px;
+    height: 30px;
+}
+.logo_link{
+    color: #555252;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+.logo::first-letter{
+ color: #48c9b0;
+ font-weight: bold;
+}
+
+
+nav{
+    margin-top: 43px;
+    width: 530px;
+    height: 30px;
+    float: right;
+}
+.menu__item{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.menu_link{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #0f0101;
+}
+
+.menu_link:hover{
+    color: #48c9b0;
+}
+
+.p_container{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.section_name{
+    margin: auto;
+    height: 57px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 48px;
+    color: #515151;
+}
+
+.news{
+    width: 319px;
+}
+
+main{
+    margin-top: 50px;
+}
+
+.section_name:after{
+    display: block;
+    margin: auto;
+    content: " ";
+    width: 160px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: #48c9b0
+}
+
+.products{
+    margin: auto;
+    width: 1110px;
+    height: 100%;
+}
+
+.products__item{
+    width: 23%;
+    height: 322px;
+    float: left;
+    background-color: #e9f0fd;
+    margin: 10px;
+}
+.products::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img_click{
+
+    display: block;
+    width: 256px;
+    height: 281px;
+}
+
+.img_container{
+    width: 256px;
+    height: 281px;
+    text-align: center;
+    display: inline-block;
+    line-height: 281px;
+    vertical-align: middle;
+}
+.product_img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    line-height: 281px;
+    vertical-align: middle;
+}
+
+.bottom_line{
+    width: 256px;
+    height: 40px;
+}
+
+
+.p_name{
+    display: inline-block;
+    width: 200px;
+    padding-left: 5px;
+    float: left;
+    height: 40px;
+    background-color: #323232;
+    line-height: 40px;
+    text-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #d6d6d6;
+}
+
+.p_price{
+    display: inline-block;
+    padding-left: 5px;
+    width: 56px;
+    height: 40px;
+    background-color:  #8c8c8c;
+    line-height: 40px;
+    text-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #d6d6d6
+}
+
+.b_line1{
+    display: inline-block;
+    width: 256px;
+    height: 40px;
+}
+
+.p_name:hover {
+    background-color: #1abc9c;
+}
+
+.p_name:hover ~ .p_price{
+    background-color: #7fd9c7;
+}
+
+
+.products__price{
+    display: inline-block;
+    width: 56px;
+    height: 40px;
+    background-color:  #8c8c8c;
+}
+
+.news_section{
+    margin: auto;
+    width: 1110px;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.news__item{
+    float: left;
+    width: 31%;
+    height: 495px;
+    margin: 1%;
+}
+
+.news__item::after{ 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img_news{
+    width: 350px;
+    height: 260px;
+}
+.img_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #555252;
+    font-weight: 600;
+}
+
+.img_title:after{
+    display: block;
+    content: " ";
+    width: 136px;
+    height: 3px;
+    margin-top: 15px;
+    background-color: #48c9b0
+}
+.img_article{
+    display: inline-block;
+    height: 75px;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+    margin-top: 30px;
+}
+
+.img_button{
+    width: 160px;
+    height: 50px;
+    margin: 17px 0 17px 0;
+    border-radius: 8px;
+    background-color: #4ec6ab;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f6fbfa;
+}
