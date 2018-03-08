@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    width: 1110px;
+    height: 90px;
+    margin: auto;
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+header::after{
+        content: "";
+        display: table;
+        clear: both;
+}
+
+.logo {
+    float: left;
+    width: 81px;
+    height: 90px;
+}
+
+.logo_link{
+    color: #555252;
+    width: 81px;
+    height: 36px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+.logo::first-letter{
+ color: #48c9b0;
+ font-weight: bold;
+}
+
+
+nav{
+    width: 530px;
+    height: 90px;
+    float: right;
+}
+
+.menu{
+    float: right;
+}
+.menu__item{
+    display: inline-block;
+    padding: 0 0 0 30px;
+}
+
+.menu_link{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #0f0101;
+}
+
+.menu_link:hover{
+    color: #48c9b0;
+}
+
+.slider{
+    width: 100%;
+    height: 602px;
+    position: relative;
+    margin: auto;
+    background-image: url("../img/slide4.jpg");
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sl_center{
+    width: 1112px;
+    height: 104px;
+    margin: auto;
+    padding-top: 228px;
+}
+
+.sl_title{
+    display: inline-block;
+    width: 800px;
+    height: 104px;
+    margin-left: 80px;
+}
+
+.slider h2{
+    width: 800px;
+    height: 70px;
+    margin: -20px 0 16px 0;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.slider h3{
+    width: 800px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.sl_button{
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    border: none;
+    background-color: #48c9b0;
+    opacity: 0.65;
+    color: #ffffff;
+    font-size: 100px;
+}
+.b_left{
+    float: left;
+}
+
+.b_right{
+    float: right;
+}
+
+.sl_button:hover{
+    opacity: 1;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #e9f0fd;
+    padding-bottom: 80px;
+}
+
+.products{
+    width: 1110px;
+    height: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.p_container{
+    width: 385px;
+    height: 100px;
+    margin: auto;
+}
+
+.section_name{
+    height: 57px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-size: 48px;
+    color: #515151;
+}
+
+.section_name:after{
+    display: block;
+    margin: auto;
+    content: " ";
+    width: 164px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: #48c9b0
+}
+
+.pr_items{
+    width: 1110px;
+    height: 333px;
+    margin-top: 100px;
+}
+
+.products__item{
+    width: 23%;
+    height: 323px;
+    float: left;
+    background-color: #ffffff;
+    margin: 11px;
+}
+.products::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img_click{
+    width: 255px;
+    height: 281px;
+}
+
+.img_click:hover .p_name{
+    background-color: #1abc9c;
+}
+
+.img_click:hover .item_hover{
+    display: block;
+}
+
+.img_click:hover .p_price{
+    background-color: #7fd9c7;
+}
+.img_container{
+    position: relative;
+    width: 255px;
+    height: 281px;
+    background-position-x: center;
+}
+
+.img_1{
+    background-image: url(../img/category-2.jpg);
+}
+
+.img_2{
+    background-image: url(../img/category-1.jpg);
+}
+
+.img_3{
+    background-image: url(../img/category-4.jpg);
+}
+
+.img_4{
+    background-image: url(../img/category-3.jpg);
+}
+
+.bottom_line{
+    width: 255px;
+    height: 40px;
+}
+.p_name{
+    display: inline-block;
+    width: 200px;
+    padding-left: 10px;
+    float: left;
+    height: 40px;
+    background-color: #323232;
+    line-height: 40px;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.p_price{
+    display: inline-block;
+    padding-left: 10px;
+    width: 55px;
+    height: 40px;
+    background-color:  #8c8c8c;
+    line-height: 40px;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff
+}
+.products__price{
+    display: inline-block;
+    width: 56px;
+    height: 40px;
+    background-color:  #8c8c8c;
+}
+
+.item_hover{
+    display: none;
+    position: absolute;
+    width: 235px;
+    height: 261px;
+    background: rgba(0,0,0,0.5);
+    left: 10px;
+    top:10px;
+}
+
+.buttons_wrapper {
+    width: 168px;
+    height: 107px;
+    margin: auto;
+    padding-top: 79px;
+}
+
+.like{
+    width: 50px;
+    height: 50px;
+    margin-right: 3.33px;
+    background: inherit;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+
+
+.shuffle{
+    width: 50px;
+    height: 50px;
+    margin-right: 3.33px;
+    background: inherit;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+     }
+
+.clock{
+    width: 50px;
+    height: 50px;
+    margin-right: 3.33px;
+    background: inherit;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+.cart{
+    width: 166px;
+    height: 50px;
+    margin-top: 7px;
+    background: inherit;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+
+.b_hover:hover{
+    background-color: #1abc9c;
+    border: none;
+}
+
+.text1{
+    font-size: 30px;
+}
+
+.text2{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+footer{
+    width: 100%;
+    height: 88px;
+    background-color: #323232;
+    line-height: 88px;
+    vertical-align: middle;
+}
+
+.f_wrapper{
+    width: 405px;
+    height: 20px;
+    margin: auto;
+}
+
+.f_text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    color: #d5d5d5;
+}
+
+.sign1::after{
+    content:"\00a9";
+    margin: 0 0px 0 2px;
+}
+
+.sign2::after{
+    content: "|"
+}
+
+.sign4{
+    color: #3e9182;
+}
+
