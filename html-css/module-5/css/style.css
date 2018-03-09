@@ -71,7 +71,6 @@ nav{
 .slider{
     width: 100%;
     height: 602px;
-    position: relative;
     margin: auto;
     background-image: url("../img/slide4.jpg");
     background-size: cover;
@@ -80,29 +79,30 @@ nav{
 }
 
 .sl_center{
-    width: 1112px;
-    height: 104px;
+    width: 1120px;
+    height: 150px;
     margin: auto;
-    padding-top: 228px;
+    padding-top: 210px;
+    position: relative;
 }
 
 .sl_title{
     display: inline-block;
-    width: 800px;
+    width: 770px;
+    margin-left: 160px;
     height: 104px;
-    margin-left: 80px;
 }
 
 .slider h2{
-    width: 800px;
+    width: 770px;
     height: 70px;
-    margin: -20px 0 16px 0;
+    margin-bottom: 20px;
     font-size: 60px;
     font-weight: 900;
 }
 
 .slider h3{
-    width: 800px;
+    width: 770px;
     height: 30px;
     font-size: 24px;
     font-weight: 300;
@@ -117,13 +117,16 @@ nav{
     opacity: 0.65;
     color: #ffffff;
     font-size: 100px;
+    position: absolute;
 }
 .b_left{
-    float: left;
+    left: 0px;
+    top: 230px;
 }
 
 .b_right{
-    float: right;
+    right: 0px;
+    top: 230px;
 }
 
 .sl_button:hover{
