@@ -7,7 +7,7 @@
 }
 
 header{
-    max-width: 1210px;
+    max-width: 1200px;
     height: 80px;
     margin: auto;
     display: flex;
@@ -92,14 +92,14 @@ main{
     background-color: #f38181;
 }
 
-.section_title h3{
+.section_title h2:first-child{
     width: 140px;
     margin: auto;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
 }
 
-.section_title h2{
+.section_title h2:last-child{
     width: 315px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 35px;
@@ -221,6 +221,13 @@ main{
     width: 380px;
     height: 550px;
     position: relative;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.team_item:hover{
+    transform: translate(-10px,-10px);
 }
 
 .team_image{
@@ -231,6 +238,7 @@ main{
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
+
 }
 
 .hover{
@@ -250,9 +258,7 @@ main{
     -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
     box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
-    opacity: 0.9;
-    transform: translate(-10px,-10px);
-    background: linear-gradient(#ee8989, #f0d989);
+    background: linear-gradient(to bottom, rgba(238,137,137,0.9) 0%, rgba(241,231,103,0.9) 100%);
 }
 
 .member1{
@@ -273,14 +279,13 @@ main{
 
 
 .buttons{
-    width: 226px;
+    width: 227px;
     height: 56px;
     margin: auto;
     margin-top: 207px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: inherit;
 }
 
 .but{
@@ -355,7 +360,7 @@ main{
 .titles{
     width: 168px;
     margin: auto;
-    padding-top: 22px;
+    padding-top: 496px;
     text-align: center
 }
 
@@ -379,7 +384,7 @@ main{
 }
 footer{
     height: 65px;
-    width: 1210px;
+    width: 1200px;
     margin: auto;
     margin-top: 70px;
     display: flex;
