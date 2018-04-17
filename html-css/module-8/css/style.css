@@ -9,9 +9,9 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 body{
-    width: 320px;
+    width: 100%;
     margin: auto;
 }
 
@@ -21,7 +21,7 @@ header{
 
 .wrap{
     margin: auto;
-    width: 320px;
+    width: 100%;
     min-height: 540px;
     text-align: center;
 }
@@ -150,18 +150,19 @@ h3{
 @media (min-width: 768px) and (max-width: 967px) {
 
     body{
-        width: 768px;
+        width: 100%;
         margin: auto;
     }
     
     header{
+        width: 100%;
         min-height: 700px;
         text-align: center;
     }
     
     .wrap{
         margin: 0 auto;
-        width: 768px;
+        width: 100%;
         min-height: 700px;
         text-align: center;
     }

@@ -67,11 +67,9 @@ main{
 }
 
 .section_title{
-    width: 300px;
     text-align: center;
     margin: auto;
     color: #333333;
-    width: 230px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -224,13 +222,13 @@ main{
 .contact_form textarea{
     width: 456px;
     height: 210px;
+    padding: 20px;
     border: none;
     float: right;
     color: #bbbbbb;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    text-indent: 20px;
     border-radius: 2px;
 }
 
@@ -239,20 +237,6 @@ input:valid{
 }
 input:invalid{
     outline: 1px solid red;
-}
-.txt_clear::-webkit-input-placeholder {
-    padding-top: 10px;
-}
-.txt_clear:-moz-placeholder{
-    padding-top: 10px;
-}
-
-.txt_clear::-moz-placeholder{
-    padding-top: 10px;
-}
-
-.txt_clear:-ms-input-placeholder{
-    padding-top: 10px;
 }
 
 
