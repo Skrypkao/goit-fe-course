@@ -29,6 +29,8 @@ header{
 
 header .wrap{
     background: url('../img/he768.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 ul{
@@ -170,6 +172,8 @@ h3{
     
     header .wrap{
         background: url('../img/he768.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
     }
     
     .menu{
@@ -301,6 +305,8 @@ h3{
     
     header .wrap{
         background: url('../img/he1440.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
     }
     .bl_wrap{
         display: flex;
