@@ -9,13 +9,14 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 480px) {
 body{
     width: 100%;
     margin: auto;
 }
 
 header{
+    width: 100%;
     min-height: 540px;
 }
 
@@ -27,7 +28,7 @@ header{
 }
 
 header .wrap{
-    background: url('../img/he320.jpg');
+    background: url('../img/he768.jpg');
 }
 
 ul{
@@ -147,7 +148,7 @@ h3{
     margin: 30px 0 50px 0;
 }
 
-@media (min-width: 768px) and (max-width: 967px) {
+@media (min-width: 481px) and (max-width: 968px) {
 
     body{
         width: 100%;
@@ -256,7 +257,7 @@ h3{
     }
 
     .block{
-        width: 300px;
+        max-width: 300px;
     }
     .block:nth-child(2){
         order: 2;
@@ -266,11 +267,13 @@ h3{
     }
     
     .otherp{
+        max-width: 190px;
+        height: 40px;
         margin: 60px 0 50px 0;
     }
 }
 
-@media (min-width: 960px){
+@media (min-width: 969px){
 
     body{
         min-width: 100%;
@@ -381,5 +384,9 @@ h3{
     .meetp{
         width: 500px;
         margin-bottom: 20px;
+    }
+    .otherp{
+        width: 180px;
+        height: 40px;
     }
 }
