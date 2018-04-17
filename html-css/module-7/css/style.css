@@ -224,6 +224,7 @@ main{
 .contact_form textarea{
     width: 456px;
     height: 210px;
+    padding: 20px;
     border: none;
     float: right;
     color: #bbbbbb;
