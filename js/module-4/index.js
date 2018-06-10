@@ -130,9 +130,9 @@ const products = {
         this.getCustomerMoney();
         this.countChange();
         if(this.changeAmount != null) {
-          console.log(`Спасибо за покупку, ваша сдача ${this.changeAmount}`);
+          alert(`Спасибо за покупку, ваша сдача ${this.changeAmount}`);
         } else {
-          console.log('Очень жаль, что-то пошло не так, приходите еще');
+          alert('Очень жаль, что-то пошло не так, приходите еще');
         }
       };
        };
