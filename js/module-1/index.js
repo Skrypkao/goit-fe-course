@@ -17,6 +17,7 @@ if (isValidInput) {
         if (tabaAgree) {
             taba -= reqPlaces;
             alert('Приятного путешествия в группе Таба');
+            console.log(taba);
         } else {
             alert('Нам очень жаль, приходите еще!');
         }

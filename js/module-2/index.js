@@ -11,9 +11,13 @@ let total = 0;
       alert('Было введено не число, попробуйте еще раз');
 } else { numbers.push(num);
 }
+if (userInput === null) {
+    numbers.pop();
+}
   
-} while (userInput !== null);
-
+}
+ while (userInput !== null);
+console.log(numbers);
 
 for (i=0; i<numbers.length; i++) {
     total = total + parseInt(numbers[i]);
