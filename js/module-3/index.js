@@ -59,7 +59,8 @@ const addLogin = function(logins, login){
         alert('Такой логин уже используется!');
     }
     return newLogins;
+    console.log(newLogins);
 }   
 
-console.log(addLogin(["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"], 'Johnny'));
+console.log(addLogin(["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"], 'Johnnyzs'));
 
