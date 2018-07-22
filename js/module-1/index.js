@@ -7,9 +7,6 @@ const userInput = prompt('Введите количество мест');
 const  reqPlaces = Number(userInput);
 
 const isValidInput = userInput > 0 && !Number.isNaN(userInput);
-let tabaAgree;
-let sharmAgree;
-let hurgadaAgree;
 
 if (isValidInput) {
     if (reqPlaces <= taba) {

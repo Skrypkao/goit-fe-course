@@ -59,7 +59,7 @@ const products = {
     
   function Cashier(
     name, 
-   products,
+    products,
     totalPrice = 0,
     customerMoney = 0,
     changeAmount = 0,
@@ -71,19 +71,13 @@ const products = {
       this.changeAmount = changeAmount;
 
 
-      this.countTotalPrice = function(order) {
-        let totalArray = []; 
+      this.countTotalPrice = function(order){
         for (key in order) {
-            if (order.key === products.key) {
-                const sumTotal = order[key] * products[key];
-                totalArray.push(sumTotal);
-            }
-        }
-        for (i=0; i < totalArray.length; i++) {
-            this.totalPrice += totalArray[i];
+          const sumTotal = order[key] * this.products[key];
+          this.totalPrice += sumTotal;
         }
         return this.totalPrice;
-        };
+      };
 
         
       this.getCustomerMoney = function(){
@@ -119,9 +113,6 @@ const products = {
         this.changeAmount = 0;
         this.customerMoney = 0;
         this.totalPrice = 0;
-        return this.changeAmount;
-        return this.customerMoney;
-        return this.totalPrice; 
       };
 
 

@@ -47,20 +47,18 @@ const checkIfLoginExists = function(logins, login){
 
 
 const addLogin = function(logins, login){
-    const newLogins = logins;
     if (checkLoginValidity(login) === false) {
         alert('Ошибка! Логин должен быть от 4 до 16 символов');
         return;
     } else
     if (checkIfLoginExists(logins, login) === false) {
-        const newLogins = logins.push(login);
+        logins.push(login);
         alert('Логин успешно добавлен!');
     } else {
         alert('Такой логин уже используется!');
     }
-    return newLogins;
-    console.log(newLogins);
+    return logins;
 }   
 
-console.log(addLogin(["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"], 'Johnnyzs'));
+console.log(addLogin(["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"], 'JohnnyZ'));
 
