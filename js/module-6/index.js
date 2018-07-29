@@ -86,7 +86,7 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.price и нам вернет сумму.
    */
-  calculatePrice() {
+   get calculatePrice() {
     const sizePrice = this.constructor.SIZES[this._size].price;
     const stuffingPrice = this.constructor.STUFFINGS[this._stuffing].price;
     const priceTopping = this._toppings.map(value => (value = Hamburger.TOPPINGS[value].price));
@@ -100,7 +100,7 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.calories и нам вернет сумму.
    */
-  calculateCalories() {
+   get calculateCalories() {
     const sizeCal = this.constructor.SIZES[this._size].calories;
     const stuffingCal = this.constructor.STUFFINGS[this._stuffing].calories;
     const toppingCal = this._toppings.map(value => (value = Hamburger.TOPPINGS[value].calories));
@@ -173,16 +173,16 @@ console.log(hamburger);
 hamburger.addTopping(Hamburger.TOPPING_SPICE);
 
 // Спросим сколько там калорий
-console.log("Calories: ", hamburger.calculateCalories());
+console.log("Calories: ", hamburger.calculateCalories);
 
 // Сколько стоит?
-console.log("Price: ", hamburger.calculatePrice());
+console.log("Price: ", hamburger.calculatePrice);
 
 // Я тут передумал и решил добавить еще соус
 hamburger.addTopping(Hamburger.TOPPING_SAUCE);
 
 // А сколько теперь стоит?
-console.log("Price with sauce: ", hamburger.calculatePrice());
+console.log("Price with sauce: ", hamburger.calculatePrice);
 
 // Проверить, большой ли гамбургер?
 console.log("Is hamburger large: ", hamburger.getSize === Hamburger.SIZE_LARGE); // -> false
@@ -193,7 +193,6 @@ hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 // Смотрим сколько добавок
 console.log("Hamburger has %d toppings", hamburger.getToppings.length); // 1
 
-console.log(hamburger);
 
 /*
   🔔 Обратите внимание на такие моменты:
